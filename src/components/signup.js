@@ -64,7 +64,7 @@ export default function SignUp(props)
         else if(e.target.id === 'confirmPassword')
         {
             setRegisterFormError({
-                confirmPasswordError : e.target.value.length === 0 ? "cofirm password field is required" : e.target.value === RegisterFormError.confirmPasswordError ? "": "confirm Password doesn't match password",
+                confirmPasswordError : e.target.value.length === 0 ? "cofirm password field is required" : e.target.value === RegisterForm.password ? "": "confirm Password doesn't match password",
             });
         }
     }
